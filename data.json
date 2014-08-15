@@ -1,0 +1,165 @@
+{
+    "name": "Alexander Lim",
+    "contact": [
+        {
+            "name": "Phone",
+            "value": "&lt;redacted&gt;"
+        },
+        {
+            "name": "E-mail",
+            "value": "me@alexanderlim.com",
+            "href": "mailto:me@alexanderlim.com"
+        },
+        {
+            "name": "GitHub",
+            "value": "mlex121",
+            "href": "https://github.com/mlex121"
+        }
+    ],
+    "jobs": [
+        {
+            "title": "Web and GUI Developer Intern",
+            "company": "Quantitative Brokers",
+            "href": "http://quantitativebrokers.com/",
+            "begin_date": "May",
+            "end_date": "August 2014",
+            "location": "New York City, NY",
+            "descriptions": [
+                "Built a real-time web dashboard for monitoring scripts running on various servers, reducing the reliance on e-mail for receiving alerts.",
+                "Worked on a Django web application for browsing trade summary data and TCAs.",
+                "Built Qt GUIs to monitor live trading engine data.",
+                "Built a relay in C++ to relay market data from several upstream servers to multiple clients, reducing network load."
+            ],
+            "technologies": ["Python (Django, gevent)", "JavaScript (jQuery, Backbone.js)", "C++ (Qt)", "git"]
+        },
+        {
+            "title": "Agile Engineering Intern - iOS Development",
+            "company": "Pivotal Labs",
+            "href": "http://pivotallabs.com/",
+            "begin_date": "September",
+            "end_date": "December 2013",
+            "location": "Toronto, ON",
+            "descriptions": [
+                "Built AccuWeather for iOS 7, a weather app providing detailed forecasts and a UI designed for the new OS.",
+                "Localized the app across more than a dozen languages.",
+                "Used MapKit to render and animate radar tile overlays on an interactive map."
+            ],
+            "technologies": ["Objective-C (iOS)", "git"]
+        },
+        {
+            "title": "Agile Engineering Intern - iOS Development",
+            "company": "Xtreme Labs",
+            "href": "http://pivotallabs.com/",
+            "begin_date": "January",
+            "end_date": "April 2013",
+            "location": "Toronto, ON",
+            "descriptions": [
+                "Worked on Cypress, a file management application on the iPhone and iPad that synchronizes local storage with Sharepoint, Dropbox, and Box.",
+                "Worked on Karmaloop, a shopping application on the iPhone with support for credit card scanning and social integration."
+            ],
+            "technologies": ["Objective-C (iOS)", "git"]
+        },
+        {
+            "title": "Quality Assurance Intern",
+            "company": "Advanced Software Concepts",
+            "href": "http://ascnet.com/",
+            "begin_date": "May",
+            "end_date": "August 2012",
+            "location": "Ottawa, ON",
+            "descriptions": [
+                "Wrote JMeter scripts to test an enterprise web application.",
+                "Proposed and implemented a Java utility to pull bugs from Bugzilla and update Excel spreadsheets."
+            ],
+            "technologies": ["Java", "JMeter"]
+        }
+    ],
+    "projects": [
+        {
+            "name": "OMG UW",
+            "begin_date": "April 2014",
+            "end_date": "Present",
+            "href": "http://www.omguw.com/",
+            "display_url": "www.omguw.com",
+            "descriptions": [
+                "A site that lets students anonymously share, rate, and comment on stories, missed connections, and questions about the University of Waterloo.",
+                "Joined the 3-person team at the end of April 2014, responsible for fixing technical issues and moderating submissions and comments.",
+                "Receives 250,000+ page views, 1,000+ submissions, and 1,500+ comments a month, backed by Google's Blogger platform."
+            ]
+        }
+    ],
+    "skills": [
+        {
+            "title": "Experienced",
+            "description": "",
+            "skill_items": [
+                {
+                    "name": "Objective-C",
+                    "description": "built AccuWeather, Karmaloop, and Cypress for iOS while at Xtreme Labs"
+                },
+                {
+                    "name": "Python",
+                    "description": "built web back-ends and many scripts, including to generate this resume"
+                },
+                {
+                    "name": "JavaScript",
+                    "description": "built client-side code, using both vanilla JS and Backbone.js"
+                },
+                {
+                    "name": "C++",
+                    "description": "built Qt GUIs, wrote networking code, and many school assignments"
+                },
+                {
+                    "name": "HTML and CSS (SASS)",
+                    "description": "built web pages for work and for personal use and interest"
+                }
+            ]
+        },
+        {
+            "title": "Familiar",
+            "description": "",
+            "skill_items": [
+                {
+                    "name": "Rust",
+                    "description": "experimented with implementing data structures"
+                },
+                {
+                    "name": "Java",
+                    "description": "built a Fruit Ninja clone in Swing"
+                },
+                {
+                    "name": "Bash",
+                    "description": "wrote shell scripts for file management and system administration"
+                },
+                {
+                    "name": "Racket",
+                    "description": "wrote code to learn about functional programming"
+                }
+            ]
+        }
+    ],
+    "education": [
+        {
+            "name": "University of Waterloo",
+            "degree": "Candidate for Honours Bachelor of Computer Science",
+            "href": "https://uwaterloo.ca/",
+            "begin_date": "September 2011",
+            "end_date": "April 2016 (Expected)",
+            "location": "Waterloo, ON",
+            "descriptions": [
+                {
+                    "name": "CS 349 (User Interfaces)",
+                    "description": "learned about UI theory from implementation (drawing, the event loop) to design (usability, accessibility)"
+                },
+                {
+                    "name": "CS 370 (Numerical Computation)",
+                    "description": "learned about the Fast Fourier Transform, Google PageRank, and numerical differential equation techniques"
+                },
+                {
+                    "name": "CS 241 (Foundations of Sequential Programs)",
+                    "description": "learned about assembly and compiling high-level languages, from parsing to code generation to linking and loading"
+                }
+            ]
+        }
+    ],
+    "interests": "Coffee, billiards, trivia, e-sports, mechanical keyboards "
+}

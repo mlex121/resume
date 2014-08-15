@@ -1,0 +1,137 @@
+<!-- THIS RESUME WAS AUTOMATICALLY GENERATED -->
+<!-- See github.com/mlex121/resume for the source -->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>{{ name }}</title>
+        {% if use_inline_css and css %}
+        <style media="all">
+            {{ css }}
+        </style>
+        {% elif css_file %}
+        <link rel="stylesheet" href="{{ css_file }}" media="all">
+        {% endif %}
+        {% if use_inline_css and print_css %}
+        <style media="print">
+            {{ print_css }}
+        </style>
+        {% elif print_css_file %}
+        <link rel="stylesheet" href="{{ print_css_file }}" media="print">
+        {% endif %}
+    </head>
+    <body>
+        {% if cover_letter %}
+        <div id="cover-letter">
+            {{ cover_letter }}
+        </div>
+        {% endif %}
+        <div id="resume">
+            <div id="resume-header">
+                <div id="name-container">
+                    <h1 id="name-title">{{ name }}</h1>
+                </div>
+                <div id="contact">{%+ for item in contact %}<span class="contact-name">{{ item.name }}</span>:&nbsp;<a class="contact-value" {% if item.href %}href="{{ item.href }}"{% endif %}>{{ item.value }}</a>{% if not loop.last %}<br>{% endif %}{% endfor %}
+                </div>
+            </div>
+            <hr>
+            <table id="resume-content">
+                <tr id="jobs" class="section">
+                    <td class="section-header">
+                        <h2 class="section-title">Work Experience</h2>
+                    </td>
+                    <td class="section-content">
+                    {% for job in jobs %}
+                        <div class="section-item">
+                            <div class="item-header">
+                                <a class="item-title" href="{{ job.href }}">{{ job.company }}</a>
+                                <span class="date-range">{{ job.begin_date }} &ndash; {{ job.end_date }}</span>
+                                <span class="item-subtitle">{{ job.title }}</span>
+                                <span class="location">{{ job.location }}</span>
+                            </div>
+                            <ul id="job-desc-list" class="desc-list">
+                            {% for description in job.descriptions %}
+                                <li>{{ description }}</li>
+                            {% endfor %}
+                            {% if job.technologies %}
+                                <li>Technologies: {% for technology in job.technologies %}{{ technology }}{% if not loop.last %}, {% endif %}{% endfor %}</li>
+                            {% endif %}
+                            </ul>
+                        </div>
+                    {% endfor %}
+                    </td>
+                </tr>
+                <tr id="skills" class="section">
+                    <td class="section-header">
+                        <h2 class="section-title">Skills</h2>
+                    </td>
+                    <td class="section-content">
+                    {% for category in skills %}
+                        <div class="section-item">
+                            <div class="item-header">
+                                <span class="item-title">{{ category.title }}</span>
+                            </div>
+                            <ul id="skills-list" class="desc-list">
+                            {% for skill in category.skill_items %}
+                                <li class="skill-item"><span class="skill-name">{{ skill.name }}</span>, {{ skill.description }}.</li>
+                            {% endfor %}
+                            </ul>
+                        </div>
+                    {% endfor %}
+                    </td>
+                </tr>
+                <tr id="projects" class="section">
+                    <td class="section-header">
+                        <h2 class="section-title">Other Projects</h2>
+                    </td>
+                    <td class="section-content">
+                    {% for project in projects %}
+                        <div class="section-item">
+                            <div class="item-header">
+                                <a class="item-title" href="{{ project.href }}">{{ project.name }}</a>
+                                <span class="date-range">{{ project.begin_date }} &ndash; {{ project.end_date }}</span>
+                                <span class="item-subtitle">{{ project.display_url }}</span>
+                            </div>
+                            <ul id="project-desc-list" class="desc-list">
+                            {% for desc in project.descriptions %}
+                                <li class="proj-desc-item">{{ desc }}</li>
+                            {% endfor %}
+                            </ul>
+                        </div>
+                    {% endfor %}
+                    </td>
+                </tr>
+                <tr id="education" class="section">
+                    <td class="section-header">
+                        <h2 class="section-title">Education</h2>
+                    </td>
+                    <td class="section-content">
+                    {% for school in education %}
+                        <div class="section-item">
+                            <div class="item-header">
+                                <a class="item-title" href="{{ school.href }}">{{ school.name }}</a>
+                                <span class="date-range">{{ school.begin_date }} &ndash; {{ school.end_date }}</span>
+                                <span class="item-subtitle">{{ school.degree }}</span>
+                                <span class="location">{{ school.location }}</span>
+                            </div>
+                            <ul id="education-desc-list" class="desc-list">
+                            {% for course in school.descriptions %}
+                                <li class="skill-item"><span class="skill-name">{{ course.name }}</span>, {{ course.description }}.</li>
+                            {% endfor %}
+                            </ul>
+                        </div>
+                    {% endfor %}
+                    </td>
+                </tr>
+                <tr id="interests" class="section">
+                    <td class="section-header">
+                        <h2 class="section-title">Interests</h2>
+                    </td>
+                    <td class="section-content">
+                        <div class="section-item">{{ interests }}</div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </body>
+</html>

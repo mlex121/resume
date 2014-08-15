@@ -1,0 +1,196 @@
+html {
+    background: #ffffff;
+    color: #000000;
+    font-family: "Palatino";
+    font-feature-settings: "kern";
+    font-size: 12px;
+    text-rendering: optimizeLegibility;
+}
+
+body {
+    margin: 0 auto;
+    width: 670px;
+}
+
+h1 {
+    font-weight: normal;
+    font-size: 60px;
+    letter-spacing: 0.01em;
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.item-header {
+    margin: 0 0 0.25em;
+    line-height: 1.4em;
+    font-size: 100%;
+    font-weight: normal;
+    overflow: auto;
+}
+
+.section-item:last-child {
+    margin-bottom: 0;
+}
+
+.contact-name {
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+.contact-value {
+    text-decoration: none;
+}
+
+.contact-value:hover {
+    text-decoration: underline;
+}
+
+p {
+    margin: 1em 0;
+    line-height: 1.4em;
+    text-align: justify;
+}
+
+li {
+    line-height: 1.4em;
+}
+
+hr {
+    margin: 0;
+    border: 0;
+    border-bottom: 1px solid #000000;
+}
+
+#resume-content {
+    border-spacing: 0 1.75em;
+    margin: 0;
+    padding: 0;
+    border: 0;
+
+}
+
+@page {
+    margin-top: 0.5in;
+    margin-bottom: 0.5in;
+}
+
+#cover-letter {
+    page-break-after: always;
+    margin: 0 auto;
+    width: 550px;
+    min-height: 11in;
+}
+
+#resume-header {
+    width: 100%;
+    display: table;
+    padding: 1em 0 0.5em;
+}
+
+#name-container {
+    display: table-cell;
+    width: 100%;
+    vertical-align: middle;
+}
+
+#name-title {
+    position: relative;
+    width: 100%;
+    text-align: center;
+}
+
+#contact {
+    display: table-cell;
+    text-align: left;
+    vertical-align: middle;
+    line-height: 1.4em;
+    margin: 0;
+    padding: 0;
+}
+
+.contact-value {
+    color: #000000;
+}
+
+.section-item {
+    margin-bottom: 1em;
+}
+
+.section-item:hover {
+    background-color: #FFFBDD;
+}
+
+.skill-name {
+    font-weight: bold;
+}
+
+.desc-list {
+    clear: both;
+    margin: 0;
+}
+
+.desc-list:last-child {
+    margin-bottom: 0;
+}
+
+a.item-title {
+    text-decoration: none;
+    color: #4C9ED9;
+}
+
+a.item-title:hover {
+    text-decoration: underline;
+    color: #4C9ED9;
+}
+
+a.item-title:visited {
+    color: #4C9ED9;
+}
+
+.item-title {
+    font-weight: bold;
+    color: #4C9ED9;
+}
+
+.date-range {
+    float: right;
+    color: #666666;
+}
+
+.item-subtitle {
+    clear: both;
+    float: left;
+    font-weight: normal;
+    font-style: italic;
+}
+
+.location {
+    float: right;
+    font-weight: normal;
+    color: #666666;
+}
+
+.section {
+    page-break-inside: avoid;
+}
+
+.section-header {
+    text-align: right;
+    vertical-align: top;
+    padding: 0 1.5em 0 0;
+    border-right: 1px solid black;
+}
+
+.section-content {
+    text-align: left;
+    padding: 0 0 0 1.5em;
+}
+
+.no-indent {
+    text-indent: 0;
+}
