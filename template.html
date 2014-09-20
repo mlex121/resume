@@ -63,7 +63,7 @@
                 </tr>
                 <tr id="skills" class="section">
                     <td class="section-header">
-                        <h2 class="section-title">Skills</h2>
+                        <h2 class="section-title">Languages</h2>
                     </td>
                     <td class="section-content">
                     {% for category in skills %}
@@ -114,21 +114,8 @@
                                 <span class="item-subtitle">{{ school.degree }}</span>
                                 <span class="location">{{ school.location }}</span>
                             </div>
-                            <ul id="education-desc-list" class="desc-list">
-                            {% for course in school.descriptions %}
-                                <li class="skill-item"><span class="skill-name">{{ course.name }}</span>, {{ course.description }}.</li>
-                            {% endfor %}
-                            </ul>
                         </div>
                     {% endfor %}
-                    </td>
-                </tr>
-                <tr id="interests" class="section">
-                    <td class="section-header">
-                        <h2 class="section-title">Interests</h2>
-                    </td>
-                    <td class="section-content">
-                        <div class="section-item">{{ interests }}</div>
                     </td>
                 </tr>
             </table>

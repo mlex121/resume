@@ -3,7 +3,7 @@
     "contact": [
         {
             "name": "Phone",
-            "value": "&lt;redacted&gt;"
+            "value": "(redacted)"
         },
         {
             "name": "E-mail",
@@ -25,10 +25,9 @@
             "end_date": "August 2014",
             "location": "New York City, NY",
             "descriptions": [
-                "Built a real-time web dashboard for monitoring scripts running on various servers, reducing the reliance on e-mail for receiving alerts.",
-                "Worked on a Django web application for browsing trade summary data and TCAs.",
-                "Built Qt GUIs to monitor live trading engine data.",
-                "Built a relay in C++ to relay market data from several upstream servers to multiple clients, reducing network load."
+                "Built a GUI using C++ and Qt providing real-time trading engine data to the trading desk.",
+                "Built a real-time web dashboard for monitoring scripts running on various servers.",
+                "Worked on a Django web application for browsing trade summary data and TCAs."
             ],
             "technologies": ["Python (Django, gevent)", "JavaScript (jQuery, Backbone.js)", "C++ (Qt)", "git"]
         },
@@ -40,9 +39,7 @@
             "end_date": "December 2013",
             "location": "Toronto, ON",
             "descriptions": [
-                "Built AccuWeather for iOS 7, a weather app providing detailed forecasts and a UI designed for the new OS.",
-                "Localized the app across more than a dozen languages.",
-                "Used MapKit to render and animate radar tile overlays on an interactive map."
+                "Built AccuWeather for iOS 7, a weather app providing detailed forecasts brand new UI."
             ],
             "technologies": ["Objective-C (iOS)", "git"]
         },
@@ -55,7 +52,7 @@
             "location": "Toronto, ON",
             "descriptions": [
                 "Worked on Cypress, a file management application on the iPhone and iPad that synchronizes local storage with Sharepoint, Dropbox, and Box.",
-                "Worked on Karmaloop, a shopping application on the iPhone with support for credit card scanning and social integration."
+                "Worked on Karmaloop, a shopping application on the iPhone."
             ],
             "technologies": ["Objective-C (iOS)", "git"]
         },
@@ -67,8 +64,8 @@
             "end_date": "August 2012",
             "location": "Ottawa, ON",
             "descriptions": [
-                "Wrote JMeter scripts to test an enterprise web application.",
-                "Proposed and implemented a Java utility to pull bugs from Bugzilla and update Excel spreadsheets."
+                "Wrote JMeter scripts to test a web-based contract management system.",
+                "Built a Java utility to automate updating Excel spreadsheets with data from Bugzilla."
             ],
             "technologies": ["Java", "JMeter"]
         }
@@ -94,11 +91,11 @@
             "skill_items": [
                 {
                     "name": "Objective-C",
-                    "description": "built AccuWeather, Karmaloop, and Cypress for iOS while at Xtreme Labs"
+                    "description": "built AccuWeather, Karmaloop, and other iOS apps while at Xtreme Labs"
                 },
                 {
                     "name": "Python",
-                    "description": "built web back-ends and many scripts, including to generate this resume"
+                    "description": "built web back-ends and wrote many scripts, including to generate this resume"
                 },
                 {
                     "name": "JavaScript",
@@ -106,10 +103,10 @@
                 },
                 {
                     "name": "C++",
-                    "description": "built Qt GUIs, wrote networking code, and many school assignments"
+                    "description": "built Qt GUIs, wrote networking code, and wrote many school assignments"
                 },
                 {
-                    "name": "HTML and CSS (SASS)",
+                    "name": "HTML and CSS/SASS",
                     "description": "built web pages for work and for personal use and interest"
                 }
             ]
@@ -127,10 +124,6 @@
                     "description": "built a Fruit Ninja clone in Swing"
                 },
                 {
-                    "name": "Bash",
-                    "description": "wrote shell scripts for file management and system administration"
-                },
-                {
                     "name": "Racket",
                     "description": "wrote code to learn about functional programming"
                 }
@@ -144,22 +137,7 @@
             "href": "https://uwaterloo.ca/",
             "begin_date": "September 2011",
             "end_date": "April 2016 (Expected)",
-            "location": "Waterloo, ON",
-            "descriptions": [
-                {
-                    "name": "CS 349 (User Interfaces)",
-                    "description": "learned about UI theory from implementation (drawing, the event loop) to design (usability, accessibility)"
-                },
-                {
-                    "name": "CS 370 (Numerical Computation)",
-                    "description": "learned about the Fast Fourier Transform, Google PageRank, and numerical differential equation techniques"
-                },
-                {
-                    "name": "CS 241 (Foundations of Sequential Programs)",
-                    "description": "learned about assembly and compiling high-level languages, from parsing to code generation to linking and loading"
-                }
-            ]
+            "location": "Waterloo, ON"
         }
-    ],
-    "interests": "Coffee, billiards, trivia, e-sports, mechanical keyboards "
+    ]
 }
