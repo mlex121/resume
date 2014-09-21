@@ -39,7 +39,7 @@
             "end_date": "December 2013",
             "location": "Toronto, ON",
             "descriptions": [
-                "Built AccuWeather for iOS 7, a weather app providing detailed forecasts and brand new UI."
+                "Built AccuWeather for iOS 7, a weather app providing detailed forecasts and a brand new UI."
             ],
             "technologies": ["Objective-C (iOS)", "git"]
         },
@@ -79,7 +79,7 @@
             "display_url": "www.omguw.com",
             "descriptions": [
                 "A site that lets Waterloo students anonymously share stories, complaints, questions, and missed connections.",
-                "Joined the 3-person team at the end of April 2014, responsible for fixing technical issues and moderating submissions and comments.",
+                "Joined the 3 person team being responsible for fixing technical issues and moderating submissions and comments.",
                 "Receives 250,000+ page views, 1,000+ submissions, and 1,500+ comments a month, backed by Google's Blogger platform."
             ]
         }
@@ -90,23 +90,23 @@
             "skill_items": [
                 {
                     "name": "Objective-C",
-                    "description": "built AccuWeather, Karmaloop, and other iOS apps while at Xtreme Labs"
+                    "description": "built AccuWeather, Karmaloop, and other iOS apps at Xtreme Labs"
                 },
                 {
                     "name": "Python",
-                    "description": "built web back-ends and scripts, including the script to generate this resume"
+                    "description": "built back-end software and scripts, including the script to generate this resume"
                 },
                 {
                     "name": "JavaScript",
-                    "description": "built client-side code, using both vanilla JS and Backbone.js"
+                    "description": "built client-side code using both vanilla JS and Backbone.js"
                 },
                 {
                     "name": "C++",
-                    "description": "built Qt GUIs, wrote networking code and many school assignments"
+                    "description": "built Qt GUIs, wrote networking code, and many school assignments"
                 },
                 {
                     "name": "HTML and CSS/SASS",
-                    "description": "built web pages for work and for personal use and interest"
+                    "description": "built web pages for work and for personal use"
                 }
             ]
         },
