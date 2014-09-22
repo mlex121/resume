@@ -1,7 +1,7 @@
 html {
     background: #ffffff;
     color: #000000;
-    font-family: "Palatino";
+    font-family: "Palatino", "Palatino Linotype", "Georgia", sans-serif;
     font-feature-settings: "kern";
     font-size: 12px;
     text-rendering: optimizeLegibility;
@@ -9,7 +9,7 @@ html {
 
 body {
     margin: 0 auto;
-    width: 680px;
+    width: 700px;
 }
 
 h1 {
