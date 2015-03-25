@@ -63,7 +63,7 @@
                 </tr>
                 <tr id="skills" class="section">
                     <td class="section-header">
-                        <h2 class="section-title">Languages</h2>
+                        <h2 class="section-title">Skills</h2>
                     </td>
                     <td class="section-content">
                     {% for category in skills %}
@@ -73,7 +73,7 @@
                             </div>
                             <ul id="skills-list" class="desc-list">
                             {% for skill in category.skill_items %}
-                                <li class="skill-item"><span class="skill-name">{{ skill.name }}</span>, {{ skill.description }}.</li>
+                                <li class="skill-item"><span class="skill-name">{{ skill.name }}</span>, {{ skill.description }}</li>
                             {% endfor %}
                             </ul>
                         </div>
