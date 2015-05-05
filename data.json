@@ -26,7 +26,7 @@
             "location": "Redmond, WA",
             "descriptions": [
                 "Worked on the Office Apple Product Experience team, focusing on Excel for Mac and iOS.",
-                "Built the iPhone-specific functionality for a feature originally on desktop Excel.",
+                "Built the comments functionality for the iPhone version of Excel.",
                 "Built the UI for a feature on Excel for Mac involving syntax highlighting and dynamically loading results."
             ],
             "technologies": ["Objective-C (iOS, Mac OS X)", "C++", "C", "Perforce"]
@@ -93,7 +93,7 @@
             "display_url": "www.omguw.com",
             "descriptions": [
                 "A site that lets Waterloo students anonymously share stories, questions, and missed connections.",
-                "Joined the 3 person team being responsible for fixing technical issues and moderating submissions and comments.",
+                "Responsible for fixing technical issues and moderating submissions and comments.",
                 "Receives 250,000+ page views, 1,000+ submissions, and 1,500+ comments a month, backed by Google's Blogger platform."
             ]
         }
@@ -104,7 +104,7 @@
             "skill_items": [
                 {
                     "name": "Objective-C",
-                    "description": "built features for Excel on iOS and Mac; built AccuWeather and Karmaloop for iOS at Xtreme Labs."
+                    "description": "built features for Excel on iOS and Mac; built AccuWeather and Karmaloop for iOS."
                 },
                 {
                     "name": "C++",
