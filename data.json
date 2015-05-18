@@ -26,8 +26,8 @@
             "location": "Redmond, WA",
             "descriptions": [
                 "Worked on the Office Apple Product Experience team, focusing on Excel for Mac and iOS.",
-                "Built the comments functionality for the iPhone version of Excel.",
-                "Built the UI for a feature on Excel for Mac involving syntax highlighting and dynamically loading results."
+                "Built the cell comments feature in the iPhone version of Excel.",
+                "Built the UI for Microsoft Query on Excel for Mac 2016, which included SQL syntax highlighting and query results that load on scroll."
             ],
             "technologies": ["Objective-C (iOS, Mac OS X)", "C++", "C", "Perforce"]
         },
