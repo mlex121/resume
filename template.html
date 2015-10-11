@@ -61,21 +61,19 @@
                     {% endfor %}
                     </td>
                 </tr>
-                <tr id="skills" class="section">
+                <tr id="education" class="section">
                     <td class="section-header">
-                        <h2 class="section-title">Skills</h2>
+                        <h2 class="section-title">Education</h2>
                     </td>
                     <td class="section-content">
-                    {% for category in skills %}
+                    {% for school in education %}
                         <div class="section-item">
                             <div class="item-header">
-                                <span class="item-title">{{ category.title }}</span>
+                                <a class="item-title" href="{{ school.href }}">{{ school.name }}</a>
+                                <span class="date-range">{{ school.begin_date }} &ndash; {{ school.end_date }}</span>
+                                <span class="item-subtitle">{{ school.degree }}</span>
+                                <span class="location">{{ school.location }}</span>
                             </div>
-                            <ul id="skills-list" class="desc-list">
-                            {% for skill in category.skill_items %}
-                                <li class="skill-item"><span class="skill-name">{{ skill.name }}</span>, {{ skill.description }}</li>
-                            {% endfor %}
-                            </ul>
                         </div>
                     {% endfor %}
                     </td>
@@ -91,6 +89,7 @@
                                 <a class="item-title" href="{{ project.href }}">{{ project.name }}</a>
                                 <span class="date-range">{{ project.begin_date }} &ndash; {{ project.end_date }}</span>
                                 <span class="item-subtitle">{{ project.display_url }}</span>
+                                <span class="location">{{ project.location }}</span>
                             </div>
                             <ul id="project-desc-list" class="desc-list">
                             {% for desc in project.descriptions %}
@@ -101,19 +100,21 @@
                     {% endfor %}
                     </td>
                 </tr>
-                <tr id="education" class="section">
+                <tr id="skills" class="section">
                     <td class="section-header">
-                        <h2 class="section-title">Education</h2>
+                        <h2 class="section-title">Skills</h2>
                     </td>
                     <td class="section-content">
-                    {% for school in education %}
+                    {% for category in skills %}
                         <div class="section-item">
                             <div class="item-header">
-                                <a class="item-title" href="{{ school.href }}">{{ school.name }}</a>
-                                <span class="date-range">{{ school.begin_date }} &ndash; {{ school.end_date }}</span>
-                                <span class="item-subtitle">{{ school.degree }}</span>
-                                <span class="location">{{ school.location }}</span>
+                                <span class="item-title">{{ category.title }}</span>
                             </div>
+                            <ul id="skills-list" class="desc-list">
+                            {% for skill in category.skill_items %}
+                                <li class="skill-item"><span class="skill-name">{{ skill.name }}</span>, {{ skill.description }}</li>
+                            {% endfor %}
+                            </ul>
                         </div>
                     {% endfor %}
                     </td>

@@ -3,7 +3,7 @@
     "contact": [
         {
             "name": "Phone",
-            "value": "+1 (519) 497-0199"
+            "value": "+1 (415) 936-5659"
         },
         {
             "name": "E-mail",
@@ -18,14 +18,26 @@
     ],
     "jobs": [
         {
-            "title": "Software Engineer Intern",
+            "title": "Software Engineering Intern (iOS Foundation, Clients Team)",
+            "company": "Twitter",
+            "href": "https://twitter.com/",
+            "begin_date": "August 2015",
+            "end_date": "present",
+            "location": "San Francisco, CA",
+            "descriptions": [
+                "Working on core services for Twitter's iOS client.",
+                "Revamping push notification settings on the iOS client."
+            ],
+            "technologies": ["Objective-C (iOS)", "git"]
+        },
+        {
+            "title": "Software Engineering Intern (Microsoft Excel for iOS/OS X, Applications and Services Group)",
             "company": "Microsoft",
-            "href": "http://www.microsoft.com",
+            "href": "http://www.microsoft.com/",
             "begin_date": "January",
             "end_date": "April 2015",
             "location": "Redmond, WA",
             "descriptions": [
-                "Worked on the Office Apple Product Experience team, focusing on Excel for Mac and iOS.",
                 "Built the cell comments feature in the iPhone version of Excel.",
                 "Built the UI for Microsoft Query on Excel for Mac 2016, which included SQL syntax highlighting and query results that load on scroll."
             ],
@@ -46,21 +58,21 @@
             "technologies": ["Python (Django, gevent)", "JavaScript (jQuery, Backbone.js)", "C++ (Qt)", "git"]
         },
         {
-            "title": "Agile Engineering Intern - iOS Development",
+            "title": "Agile Engineering Intern (iOS Development)",
             "company": "Pivotal Labs",
-            "href": "http://pivotallabs.com/",
+            "href": "http://pivotal.io/labs",
             "begin_date": "September",
             "end_date": "December 2013",
             "location": "Toronto, ON",
             "descriptions": [
-                "Built AccuWeather for iOS 7, a weather app providing detailed forecasts and a brand new UI."
+                "Built AccuWeather, a weather app providing detailed forecasts and a new UI for iOS 7."
             ],
             "technologies": ["Objective-C (iOS)", "git"]
         },
         {
-            "title": "Agile Engineering Intern - iOS Development",
+            "title": "Agile Engineering Intern (iOS Development)",
             "company": "Xtreme Labs",
-            "href": "http://pivotallabs.com/",
+            "href": "http://pivotal.io/labs",
             "begin_date": "January",
             "end_date": "April 2013",
             "location": "Toronto, ON",
@@ -69,19 +81,6 @@
                 "Worked on Karmaloop, a shopping application on the iPhone."
             ],
             "technologies": ["Objective-C (iOS)", "git"]
-        },
-        {
-            "title": "Quality Assurance Intern",
-            "company": "Advanced Software Concepts",
-            "href": "http://ascnet.com/",
-            "begin_date": "May",
-            "end_date": "August 2012",
-            "location": "Ottawa, ON",
-            "descriptions": [
-                "Wrote JMeter scripts to test a web-based contract management system.",
-                "Built a Java utility to automate updating Excel spreadsheets with data from Bugzilla."
-            ],
-            "technologies": ["Java", "JMeter"]
         }
     ],
     "projects": [
@@ -91,6 +90,7 @@
             "end_date": "Present",
             "href": "http://www.omguw.com/",
             "display_url": "www.omguw.com",
+            "location": "Waterloo, ON",
             "descriptions": [
                 "A site that lets Waterloo students anonymously share stories, questions, and missed connections.",
                 "Responsible for fixing technical issues and moderating submissions and comments.",
@@ -104,23 +104,19 @@
             "skill_items": [
                 {
                     "name": "Objective-C",
-                    "description": "built features for Excel on iOS and Mac; built AccuWeather and Karmaloop for iOS."
+                    "description": "Twitter (iOS), Microsoft Excel (iOS and OS X), and AccuWeather (iOS)"
                 },
                 {
                     "name": "C++",
-                    "description": "built features for Excel, created Qt GUIs and wrote networking code."
+                    "description": "Microsoft Excel and Qt GUIs and networking code for Quantitative Brokers"
                 },
                 {
                     "name": "Python",
-                    "description": "built back-end software and scripts, including the script to generate this resume."
+                    "description": "Web back-ends at Quantitative Brokers and the script for generating this resume."
                 },
                 {
                     "name": "JavaScript",
-                    "description": "built front-ends using both vanilla JS and Backbone.js."
-                },
-                {
-                    "name": "Java",
-                    "description": "built a Fruit Ninja clone for CS 349 (User Interfaces) using Swing."
+                    "description": "Front-ends (vanilla JS and Backbone.js) at Quantitative Brokers."
                 }
             ]
         }
