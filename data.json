@@ -41,7 +41,7 @@
                 "Built the cell comments feature in the iPhone version of Excel.",
                 "Built the UI for Microsoft Query on Excel for Mac 2016, which included SQL syntax highlighting and query results that load on scroll."
             ],
-            "technologies": ["Objective-C (iOS, Mac OS X)", "C++", "C", "Perforce"]
+            "technologies": ["Objective-C (iOS, OS X)", "C++", "C", "Perforce"]
         },
         {
             "title": "Web and GUI Developer Intern",
@@ -127,7 +127,7 @@
             "degree": "Candidate for Honours Bachelor of Computer Science",
             "href": "https://uwaterloo.ca/",
             "begin_date": "September 2011",
-            "end_date": "April 2016 (Expected)",
+            "end_date": "August 2016 (Expected)",
             "location": "Waterloo, ON"
         }
     ]

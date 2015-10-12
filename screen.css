@@ -172,6 +172,7 @@ a.item-title:visited {
 .location {
     float: right;
     font-weight: normal;
+    font-style: italic;
     color: #666666;
 }
 
