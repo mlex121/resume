@@ -18,15 +18,15 @@
     ],
     "jobs": [
         {
-            "title": "Software Engineering Intern (iOS Foundation, Clients Team)",
+            "title": "Software Engineering Intern (Clients Team, iOS Core Services)",
             "company": "Twitter",
             "href": "https://twitter.com/",
-            "begin_date": "August 2015",
-            "end_date": "present",
+            "begin_date": "August",
+            "end_date": "December 2015",
             "location": "San Francisco, CA",
             "descriptions": [
-                "Working on core services for Twitter's iOS client.",
-                "Revamping push notification settings on the iOS client."
+                "Worked on core services for Twitter's iOS client.",
+                "Revamped push and SMS notification settings on the iOS client."
             ],
             "technologies": ["Objective-C (iOS)", "git"]
         },
