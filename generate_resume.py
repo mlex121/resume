@@ -9,6 +9,15 @@ from jinja2 import (
 )
 
 
+def read_file(filename):
+    try:
+        with open(filename, 'r') as f:
+            return f.read()
+    except IOError as e:
+        print('Error opening ' + filename + ': ' + str(e),
+              file=sys.stderr)
+        sys.exit(1)
+
 def main():
     parser = argparse.ArgumentParser(
         description='Generates an HTML resume rendered from the given '
@@ -16,13 +25,16 @@ def main():
     parser.add_argument('template',
                         help='The Jinja2 template file to be rendered.')
     parser.add_argument('data',
-                        help='The JSON-formatted data to be passed to the template renderer.')
+                        help='The JSON-formatted data to be passed to the '
+                             'template renderer.')
     parser.add_argument('-o', '--outfile',
                         help='The destination file to write the resume to. If '
                              'not specified, writes the result to standard '
                              'output.')
     parser.add_argument('-c', '--css',
                         help='The primary CSS file for the document.')
+    parser.add_argument('-f', '--font-css',
+                        help='The font CSS file for the document.')
     parser.add_argument('-p', '--print-css',
                         help='The print media CSS file for the document.')
     parser.add_argument('-i', '--inline-css',
@@ -32,7 +44,8 @@ def main():
                              'inserted inline (within <style> tags). Defaults '
                              'to False.')
     parser.add_argument('-l', '--cover-letter',
-                        help='A cover letter to be inserted before the resume.')
+                        help='A cover letter to be inserted before the resume.'
+                        )
 
     args = parser.parse_args()
     env = Environment(loader=FileSystemLoader('.'),
@@ -63,43 +76,26 @@ def main():
               file=sys.stderr)
         sys.exit(1)
 
-    # CSS
-    if args.css:
-        if args.use_inline_css:
-            context['use_inline_css'] = True
-            try:
-                with open(args.css, 'r') as f:
-                    context['css'] = f.read()
-            except IOError as e:
-                print('Error opening ' + args.css + ': ' + str(e),
-                      file=sys.stderr)
-                sys.exit(1)
-        else:
+    # CSS files
+    if args.use_inline_css:
+        context['use_inline_css'] = True
+        if args.css:
+            context['css'] = read_file(args.css)
+        if args.font_css:
+            context['font_css'] = read_file(args.font_css)
+        if args.print_css:
+            context['print_css'] = read_file(args.print_css)
+    else:
+        if args.css:
             context['css_file'] = args.css
-
-    # Print CSS
-    if args.print_css:
-        if args.use_inline_css:
-            context['use_inline_css'] = True
-            try:
-                with open(args.print_css, 'r') as f:
-                    context['print_css'] = f.read()
-            except IOError as e:
-                print('Error opening ' + args.print_css + ': ' + str(e),
-                      file=sys.stderr)
-                sys.exit(1)
-        else:
+        if args.font_css:
+            context['font_css_file'] = args.font_css
+        if args.print_css:
             context['print_css_file'] = args.print_css
 
     # Cover letter
     if args.cover_letter:
-        try:
-            with open(args.cover_letter, 'r') as f:
-                context['cover_letter'] = f.read()
-        except IOError as e:
-            print('Error opening ' + args.cover_letter + ': ' + str(e),
-                  file=sys.stderr)
-            sys.exit(1)
+        context['cover_letter'] = read_file(args.cover_letter)
 
     # Render template
     try:

@@ -5,19 +5,32 @@
     <head>
         <meta charset="utf-8">
         <title>{{ name }}</title>
-        {% if use_inline_css and css %}
+        {% if use_inline_css %}
+            {% if font_css %}
+        <style media="all">
+            {{ font_css }}
+        </style>
+            {% endif %}
+            {% if css %}
         <style media="all">
             {{ css }}
         </style>
-        {% elif css_file %}
-        <link rel="stylesheet" href="{{ css_file }}" media="all">
-        {% endif %}
-        {% if use_inline_css and print_css %}
+            {% endif %}
+            {% if print_css %}
         <style media="print">
             {{ print_css }}
         </style>
-        {% elif print_css_file %}
+            {% endif %}
+        {% else %}
+            {% if font_css_file %}
+        <link rel="stylesheet" href="{{ font_css_file }}" media="all">
+            {% endif %}
+            {% if css_file %}
+        <link rel="stylesheet" href="{{ css_file }}" media="all">
+            {% endif %}
+            {% if print_css_file %}
         <link rel="stylesheet" href="{{ print_css_file }}" media="print">
+            {% endif %}
         {% endif %}
     </head>
     <body>
