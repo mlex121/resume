@@ -3,7 +3,7 @@
     "contact": [
         {
             "name": "Phone",
-            "value": "+1 (415) 936-5659"
+            "value": "N/A"
         },
         {
             "name": "E-mail",
@@ -17,6 +17,20 @@
         }
     ],
     "jobs": [
+        {
+            "title": "Software Engineering Intern (Platforms Team, iOS)",
+            "company": "Twitch",
+            "href": "https://www.twitch.tv/",
+            "begin_date": "May",
+            "end_date": "August 2016",
+            "location": "San Francisco, CA",
+            "descriptions": [
+                "Built host mode on the Twitch iOS apps, which lets you watch streams hosted by people you follow and host streams yourself.",
+                "Built resume watching on the Twitch iOS apps, which lets you continue watching the VOD of a stream from where you left off.",
+                "Added VOD timestamping to universal app linking and deep linking."
+            ],
+            "technologies": ["Objective-C (iOS)", "git"]
+        },
         {
             "title": "Software Engineering Intern (Clients Team, iOS Core Services)",
             "company": "Twitter",
@@ -83,32 +97,17 @@
             "technologies": ["Objective-C (iOS)", "git"]
         }
     ],
-    "projects": [
-        {
-            "name": "OMG UW",
-            "begin_date": "April 2014",
-            "end_date": "Present",
-            "href": "http://www.omguw.com/",
-            "display_url": "www.omguw.com",
-            "location": "Waterloo, ON",
-            "descriptions": [
-                "A site that lets Waterloo students anonymously share stories, questions, and missed connections.",
-                "Responsible for fixing technical issues and moderating submissions and comments.",
-                "Receives 250,000+ page views, 1,000+ submissions, and 1,500+ comments a month, backed by Google's Blogger platform."
-            ]
-        }
-    ],
     "skills": [
         {
             "title": "Languages",
             "skill_items": [
                 {
                     "name": "Objective-C",
-                    "description": "Twitter (iOS), Microsoft Excel (iOS and OS X), and AccuWeather (iOS)"
+                    "description": "Twitch, Twitter, Microsoft Excel, and AccuWeather."
                 },
                 {
                     "name": "C++",
-                    "description": "Microsoft Excel and Qt GUIs and networking code for Quantitative Brokers"
+                    "description": "Microsoft Excel and Qt GUIs and networking code for Quantitative Brokers."
                 },
                 {
                     "name": "Python",
@@ -124,10 +123,10 @@
     "education": [
         {
             "name": "University of Waterloo",
-            "degree": "Candidate for Honours Bachelor of Computer Science",
+            "degree": "Honours Bachelor of Computer Science, Minor in Economics",
             "href": "https://uwaterloo.ca/",
-            "begin_date": "September 2011",
-            "end_date": "August 2016 (Expected)",
+            "begin_date": "Septemberf 2011",
+            "end_date": "August 2016",
             "location": "Waterloo, ON"
         }
     ]

@@ -49,6 +49,23 @@
             </div>
             <hr>
             <table id="resume-content">
+                <tr id="education" class="section">
+                    <td class="section-header">
+                        <h2 class="section-title">Education</h2>
+                    </td>
+                    <td class="section-content">
+                    {% for school in education %}
+                        <div class="section-item">
+                            <div class="item-header">
+                                <a class="item-title" href="{{ school.href }}">{{ school.name }}</a>
+                                <span class="date-range">{{ school.begin_date }} &ndash; {{ school.end_date }}</span>
+                                <span class="item-subtitle">{{ school.degree }}</span>
+                                <span class="location">{{ school.location }}</span>
+                            </div>
+                        </div>
+                    {% endfor %}
+                    </td>
+                </tr>
                 <tr id="jobs" class="section">
                     <td class="section-header">
                         <h2 class="section-title">Work Experience</h2>
@@ -74,23 +91,7 @@
                     {% endfor %}
                     </td>
                 </tr>
-                <tr id="education" class="section">
-                    <td class="section-header">
-                        <h2 class="section-title">Education</h2>
-                    </td>
-                    <td class="section-content">
-                    {% for school in education %}
-                        <div class="section-item">
-                            <div class="item-header">
-                                <a class="item-title" href="{{ school.href }}">{{ school.name }}</a>
-                                <span class="date-range">{{ school.begin_date }} &ndash; {{ school.end_date }}</span>
-                                <span class="item-subtitle">{{ school.degree }}</span>
-                                <span class="location">{{ school.location }}</span>
-                            </div>
-                        </div>
-                    {% endfor %}
-                    </td>
-                </tr>
+                {% if projects %}
                 <tr id="projects" class="section">
                     <td class="section-header">
                         <h2 class="section-title">Other Projects</h2>
@@ -113,6 +114,7 @@
                     {% endfor %}
                     </td>
                 </tr>
+                {% endif %}
                 <tr id="skills" class="section">
                     <td class="section-header">
                         <h2 class="section-title">Skills</h2>
