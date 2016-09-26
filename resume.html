@@ -6,10 +6,12 @@
         <meta charset="utf-8">
         <title>Alexander Lim</title>
         <style media="all">
-            html {
+            @charset "UTF-8";
+
+html {
     background: #ffffff;
     color: #000000;
-    font-family: "Palatino", "Palatino Linotype", "Georgia", sans-serif;
+    font-family: "MetaSerifPro", "Palatino", "Palatino Linotype", "Georgia", sans-serif;
     font-feature-settings: "kern";
     font-size: 12px;
     text-rendering: optimizeLegibility;
@@ -219,15 +221,44 @@ a.item-title:visited {
                 <div id="name-container">
                     <h1 id="name-title">Alexander Lim</h1>
                 </div>
-                <div id="contact"><span class="contact-name">Phone</span>:&nbsp;<a class="contact-value" >+1 (415) 936-5659</a><br><span class="contact-name">E-mail</span>:&nbsp;<a class="contact-value" href="mailto:me@alexanderlim.com">me@alexanderlim.com</a><br><span class="contact-name">GitHub</span>:&nbsp;<a class="contact-value" href="https://github.com/mlex121">mlex121</a>                </div>
+                <div id="contact"><span class="contact-name">Phone</span>:&nbsp;<a class="contact-value" >N/A</a><br><span class="contact-name">E-mail</span>:&nbsp;<a class="contact-value" href="mailto:me@alexanderlim.com">me@alexanderlim.com</a><br><span class="contact-name">GitHub</span>:&nbsp;<a class="contact-value" href="https://github.com/mlex121">mlex121</a>                </div>
             </div>
             <hr>
             <table id="resume-content">
+                <tr id="education" class="section">
+                    <td class="section-header">
+                        <h2 class="section-title">Education</h2>
+                    </td>
+                    <td class="section-content">
+                        <div class="section-item">
+                            <div class="item-header">
+                                <a class="item-title" href="https://uwaterloo.ca/">University of Waterloo</a>
+                                <span class="date-range">Septemberf 2011 &ndash; August 2016</span>
+                                <span class="item-subtitle">Honours Bachelor of Computer Science, Minor in Economics</span>
+                                <span class="location">Waterloo, ON</span>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
                 <tr id="jobs" class="section">
                     <td class="section-header">
                         <h2 class="section-title">Work Experience</h2>
                     </td>
                     <td class="section-content">
+                        <div class="section-item">
+                            <div class="item-header">
+                                <a class="item-title" href="https://www.twitch.tv/">Twitch</a>
+                                <span class="date-range">May &ndash; August 2016</span>
+                                <span class="item-subtitle">Software Engineering Intern (Platforms Team, iOS)</span>
+                                <span class="location">San Francisco, CA</span>
+                            </div>
+                            <ul id="job-desc-list" class="desc-list">
+                                <li>Built host mode on the Twitch iOS apps, which lets you watch streams hosted by people you follow and host streams yourself.</li>
+                                <li>Built resume watching on the Twitch iOS apps, which lets you continue watching the VOD of a stream from where you left off.</li>
+                                <li>Added VOD timestamping to universal app linking and deep linking.</li>
+                                <li>Technologies: Objective-C (iOS), git</li>
+                            </ul>
+                        </div>
                         <div class="section-item">
                             <div class="item-header">
                                 <a class="item-title" href="https://twitter.com/">Twitter</a>
@@ -295,41 +326,6 @@ a.item-title:visited {
                         </div>
                     </td>
                 </tr>
-                <tr id="education" class="section">
-                    <td class="section-header">
-                        <h2 class="section-title">Education</h2>
-                    </td>
-                    <td class="section-content">
-                        <div class="section-item">
-                            <div class="item-header">
-                                <a class="item-title" href="https://uwaterloo.ca/">University of Waterloo</a>
-                                <span class="date-range">September 2011 &ndash; August 2016 (Expected)</span>
-                                <span class="item-subtitle">Candidate for Honours Bachelor of Computer Science</span>
-                                <span class="location">Waterloo, ON</span>
-                            </div>
-                        </div>
-                    </td>
-                </tr>
-                <tr id="projects" class="section">
-                    <td class="section-header">
-                        <h2 class="section-title">Other Projects</h2>
-                    </td>
-                    <td class="section-content">
-                        <div class="section-item">
-                            <div class="item-header">
-                                <a class="item-title" href="http://www.omguw.com/">OMG UW</a>
-                                <span class="date-range">April 2014 &ndash; Present</span>
-                                <span class="item-subtitle">www.omguw.com</span>
-                                <span class="location">Waterloo, ON</span>
-                            </div>
-                            <ul id="project-desc-list" class="desc-list">
-                                <li class="proj-desc-item">A site that lets Waterloo students anonymously share stories, questions, and missed connections.</li>
-                                <li class="proj-desc-item">Responsible for fixing technical issues and moderating submissions and comments.</li>
-                                <li class="proj-desc-item">Receives 250,000+ page views, 1,000+ submissions, and 1,500+ comments a month, backed by Google's Blogger platform.</li>
-                            </ul>
-                        </div>
-                    </td>
-                </tr>
                 <tr id="skills" class="section">
                     <td class="section-header">
                         <h2 class="section-title">Skills</h2>
@@ -340,8 +336,8 @@ a.item-title:visited {
                                 <span class="item-title">Languages</span>
                             </div>
                             <ul id="skills-list" class="desc-list">
-                                <li class="skill-item"><span class="skill-name">Objective-C</span>, Twitter (iOS), Microsoft Excel (iOS and OS X), and AccuWeather (iOS)</li>
-                                <li class="skill-item"><span class="skill-name">C++</span>, Microsoft Excel and Qt GUIs and networking code for Quantitative Brokers</li>
+                                <li class="skill-item"><span class="skill-name">Objective-C</span>, Twitch, Twitter, Microsoft Excel, and AccuWeather.</li>
+                                <li class="skill-item"><span class="skill-name">C++</span>, Microsoft Excel and Qt GUIs and networking code for Quantitative Brokers.</li>
                                 <li class="skill-item"><span class="skill-name">Python</span>, Web back-ends at Quantitative Brokers and the script for generating this resume.</li>
                                 <li class="skill-item"><span class="skill-name">JavaScript</span>, Front-ends (vanilla JS and Backbone.js) at Quantitative Brokers.</li>
                             </ul>
