@@ -18,16 +18,26 @@
     ],
     "jobs": [
         {
+            "title": "Software Engineer (Mobile Team, iOS)",
+            "company": "Twitch",
+            "href": "https://www.twitch.tv/",
+            "dates": "December 2016–present",
+            "location": "San Francisco, CA",
+            "descriptions": [
+                "Built Multiview and Squad Streaming on iOS, which let you watch multiple streams at once.",
+                "Built native clip editing on iOS, which lets you create and trim clips of your favorite streamers."
+            ],
+            "technologies": ["Swift (iOS)", "Objective-C (iOS)", "git"]
+        },
+        {
             "title": "Software Engineering Intern (Platforms Team, iOS)",
             "company": "Twitch",
             "href": "https://www.twitch.tv/",
-            "begin_date": "May",
-            "end_date": "August 2016",
+            "dates": "May–August 2016",
             "location": "San Francisco, CA",
             "descriptions": [
                 "Built host mode on the Twitch iOS apps, which lets you watch streams hosted by people you follow and host streams yourself.",
-                "Built resume watching on the Twitch iOS apps, which lets you continue watching the VOD of a stream from where you left off.",
-                "Added VOD timestamping to universal app linking and deep linking."
+                "Built resume watching on the Twitch iOS apps, which lets you continue watching the VOD of a stream from where you left off."
             ],
             "technologies": ["Objective-C (iOS)", "git"]
         },
@@ -35,8 +45,7 @@
             "title": "Software Engineering Intern (Clients Team, iOS Core Services)",
             "company": "Twitter",
             "href": "https://twitter.com/",
-            "begin_date": "August",
-            "end_date": "December 2015",
+            "dates": "August–December 2015",
             "location": "San Francisco, CA",
             "descriptions": [
                 "Worked on core services for Twitter's iOS client.",
@@ -48,8 +57,7 @@
             "title": "Software Engineering Intern (Microsoft Excel for iOS/OS X, Applications and Services Group)",
             "company": "Microsoft",
             "href": "http://www.microsoft.com/",
-            "begin_date": "January",
-            "end_date": "April 2015",
+            "dates": "January–April 2015",
             "location": "Redmond, WA",
             "descriptions": [
                 "Built the cell comments feature in the iPhone version of Excel.",
@@ -61,36 +69,22 @@
             "title": "Web and GUI Developer Intern",
             "company": "Quantitative Brokers",
             "href": "http://quantitativebrokers.com/",
-            "begin_date": "May",
-            "end_date": "August 2014",
+            "dates": "May–August 2014",
             "location": "New York City, NY",
             "descriptions": [
                 "Built a GUI using C++ and Qt providing real-time trading engine data to the trading desk.",
-                "Built a real-time web dashboard for monitoring scripts running on various servers.",
-                "Worked on a Django web application for browsing trade summary data and TCAs."
+                "Built a real-time web dashboard for monitoring scripts running on various servers."
             ],
             "technologies": ["Python (Django, gevent)", "JavaScript (jQuery, Backbone.js)", "C++ (Qt)", "git"]
         },
         {
             "title": "Agile Engineering Intern (iOS Development)",
-            "company": "Pivotal Labs",
+            "company": "Pivotal Labs (formerly Xtreme Labs)",
             "href": "http://pivotal.io/labs",
-            "begin_date": "September",
-            "end_date": "December 2013",
+            "dates": "January–April and September–December 2013",
             "location": "Toronto, ON",
             "descriptions": [
-                "Built AccuWeather, a weather app providing detailed forecasts and a new UI for iOS 7."
-            ],
-            "technologies": ["Objective-C (iOS)", "git"]
-        },
-        {
-            "title": "Agile Engineering Intern (iOS Development)",
-            "company": "Xtreme Labs",
-            "href": "http://pivotal.io/labs",
-            "begin_date": "January",
-            "end_date": "April 2013",
-            "location": "Toronto, ON",
-            "descriptions": [
+                "Built AccuWeather, a weather app providing detailed forecasts and a new UI for iOS 7.",
                 "Worked on Cypress, a file management application on the iPhone and iPad that synchronizes local storage with Sharepoint, Dropbox, and Box.",
                 "Worked on Karmaloop, a shopping application on the iPhone."
             ],
@@ -102,8 +96,12 @@
             "title": "Languages",
             "skill_items": [
                 {
+                    "name": "Swift",
+                    "description": "iOS development for Twitch."
+                },
+                {
                     "name": "Objective-C",
-                    "description": "Twitch, Twitter, Microsoft Excel, and AccuWeather."
+                    "description": "iOS development for Twitch, Twitter, Microsoft Excel, and AccuWeather."
                 },
                 {
                     "name": "C++",
@@ -111,11 +109,11 @@
                 },
                 {
                     "name": "Python",
-                    "description": "Web back-ends at Quantitative Brokers and the script for generating this resume."
+                    "description": "Web back-ends for Quantitative Brokers and the script for generating this resume."
                 },
                 {
                     "name": "JavaScript",
-                    "description": "Front-ends (vanilla JS and Backbone.js) at Quantitative Brokers."
+                    "description": "Front-ends (vanilla JS and Backbone.js) for Quantitative Brokers."
                 }
             ]
         }
@@ -125,7 +123,7 @@
             "name": "University of Waterloo",
             "degree": "Honours Bachelor of Computer Science, Minor in Economics",
             "href": "https://uwaterloo.ca/",
-            "begin_date": "Septemberf 2011",
+            "begin_date": "September 2011",
             "end_date": "August 2016",
             "location": "Waterloo, ON"
         }
