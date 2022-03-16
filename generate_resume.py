@@ -12,7 +12,7 @@ from jinja2 import (
 def read_file(filename):
     try:
         with open(filename, 'r') as f:
-            return unicode(f.read(), 'utf-8')
+            return f.read()
     except IOError as e:
         print('Error opening ' + filename + ': ' + str(e),
               file=sys.stderr)
@@ -108,7 +108,7 @@ def main():
     if args.outfile:
         try:
             with open(args.outfile, 'w') as f:
-                f.write(result.encode('utf-8'))
+                f.write(result)
         except IOError as e:
             print('Error writing to file ' + args.outfile + ': ' + str(e),
                   file=sys.stderr)
